@@ -23,7 +23,7 @@ node {
           
     stage("publish artifactory") {
         
-    nexusArtifactUploader artifacts: [[artifactId: 'gameoflife', classifier: '', file: '/var/lib/jenkins/workspace/new-multy-branch/gameoflife-build/target/gameoflife-build-1.0-SNAPSHOT.jar', type: 'jar']], credentialsId: '7978f693-3a58-47ed-a65a-eac3032fe756', groupId: 'com.wakaleo.gameoflife', nexusUrl: 'localhost:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'yeshwanth', version: '4.0.0'
+    nexusArtifactUploader artifacts: [[artifactId: 'gameoflife', classifier: '', file: '/var/lib/jenkins/workspace/new-multy-branch_feature-1/gameoflife-build/target/gameoflife-build-1.0-SNAPSHOT.jar', type: 'jar']], credentialsId: '7978f693-3a58-47ed-a65a-eac3032fe756', groupId: 'com.wakaleo.gameoflife', nexusUrl: 'localhost:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'yeshwanth', version: '4.0.0'
     }
         
         
